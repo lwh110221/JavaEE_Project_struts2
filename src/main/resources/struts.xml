@@ -3,9 +3,12 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-    <package name="hello" extends="struts-default">
-        <action name="hello" class="stu.lwhao.javaee_project_strtus2.HelloAction">
-            <result name="success">/hello.jsp</result>
+    <package name="book" extends="struts-default">
+        <action name="bookSearch" class="stu.lwhao.action.BookSearchAction">
+            <result name="success">/bookSearchResults.jsp</result>
+        </action>
+        <action name="bookDelete" class="stu.lwhao.action.BookDeleteAction">
+            <result name="success" type="redirect">/bookSearchResults.jsp</result>
         </action>
     </package>
 </struts>
