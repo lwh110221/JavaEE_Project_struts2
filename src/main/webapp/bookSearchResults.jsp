@@ -12,6 +12,32 @@
 <head>
     <title>图书查询结果</title>
     <meta charset="UTF-8">
+    <style>
+        body{
+            background: antiquewhite;
+        }
+        h1{
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
 <h1>图书查询结果</h1>
